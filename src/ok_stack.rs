@@ -5,7 +5,7 @@ pub struct List<T> {
 
 type Link<T> = Option<Box<Node<T>>>;
 
-struct Node<T> {
+pub struct Node<T> {
     elem: T,
     next: Link<T>,
 }
